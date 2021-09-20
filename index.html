@@ -7,54 +7,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
+    <script>
+        console.log();
+    </script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
     <title>CV</title>
 </head>
 
 <body>
-    <main>
-       <h1>Resume</h1>
-        <img src="Koala.jpg" alt="koala">
-        <article>
-            <section>
-                <h2>Full name:</h2>
-                <p>Olga Dementey</p>
-            </section>
-            <section>
-                <h2>Email addresses:</h2>
-                <p>dementeyolya@gmail.com, dementeyolya@yandex.ru</p>
-            </section>
-            <section>
-                <h2>Summary:</h2>
-                <p>I am a communicative, stress-resistant and responsible person,
-                    always willing to learn something new and digesting new information
-                    really fast and efficiently. Now I am targeted at becoming a professional
-                    web-developer, because I find it exciting to code and create something
-                    new on the Internet. In the nearest future I am going to learn JavaScript
-                    and later learn a JS framework (planning to learn Angular).</p>
-            </section>
-            <section>
-                <h2>Skills:</h2>
-                <p>Good knowledge of HTML and CSS, basic knowledge of JavaScript. Knowledge of Bootstrap 4, basic knowledge of Git.</p>
-            </section>
-            <section>
-                <h2>Code examples:</h2>
-                <p>My latest code examples can be seen on the webpage example.com.</p>
-            </section>
-            <section>
-                <h2>Experience:</h2>
-                <p>I've passed several HTML and CSS courses on Codecademy and Stepic, in the course of which I've done several projects.</p>
-            </section>
-            <section>
-                <h2>Education:</h2>
-                <p>High school, unfinished higher education (3rd year). Frontend courses on Stepic, Codecademy, Coursera.</p>
-            </section>
-            <section>
-                <h2>Languages:</h2>
-                <p>C1 level of English. I successfully passed Cambridge FCE Exam and have a C1-level sertificate.</p>
-                <p>Chinese: B2 level.</p>
-                <p>Belarusian: C1 level.</p>
-                <p>Russian: native language.</p>
-            </section>
-        </article>
-    </main>
-</body></html>
+    <div class="wrapper">
+        <main>
+            <div class="general">
+                <header>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <nav class="menu menu__box">
+                            <span><a class="menu__item" href="#about">About me</a></span>
+                            <span><a class="menu__item" href="#skills">Skills</a></span>
+                            <span><a class="menu__item" href="#code">Code example</a></span>
+                            <span><a class="menu__item" href="#experience">Experience</a></span>
+                            <span><a class="menu__item" href="#education">Education</a></span>
+                            <span><a class="menu__item" href="#languages">Languages</a></span>
+                            <span><a class="menu__item" href="#contacts">Contacts</a></span>
+                        </nav>
+                    </div>
+
+                </header>
+                <h2 class="name">Full Name: Dementey Olga</h2>
+                <section id="about">
+                    <img src="Koala.jpg" alt="koala">
+                    <h2>About me</h2>
+                    <p>I am a communicative, stress-resistant and responsible person,
+                        always willing to learn something new and digesting new information
+                        really fast and efficiently. Now I am targeted at becoming a professional
+                        web-developer, because I find it exciting to code and create something
+                        new on the Internet. In the nearest future I am going to learn JavaScript
+                        and later learn a JS framework (planning to learn React.js).</p>
+                </section>
+                <section id="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li><a href="mailto:dementeyolya@gmail.com">dementeyolya@gmail.com</a></li>
+                        <li><a href="https://github.com/dementeyolga">Github</a></li>
+                    </ul>
+
+                </section>
+
+            </div>
+            <div class="details">
+                <h1>CV: Trainee Frontend Developer</h1>
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <p>I've passed HTML and CSS courses on Codecademy and Stepic, in the course of which I've
+                        done
+                        several projects.</p>
+                </section>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Good knowledge of HTML and CSS</li>
+                        <li>Basic knowledge of JavaScript</li>
+                        <li>Basic knowledge of Git</li>
+                        <li>Basic knowledge of algorithms</li>
+                    </ul>
+                </section>
+                <section id="code">
+                    <h2>Code example</h2>
+                    <p>This is the solution to the Codewars task "Shortest Word"</p>
+                    <pre><code class="code">
+                        function findShort(s) {
+                            let arr = s.split(" ");
+                            let short = arr[0].length;
+                            for (let i = 1; i < arr.length; i++) {
+                                if (arr[i].length < short) {
+                                short = arr[i].length;
+                          }
+                        }
+                        return short;
+                      }</code></pre>
+                </section>
+
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>High school, unfinished higher education. Frontend courses on Stepic, Codecademy, Coursera.</p>
+                </section>
+                <section id="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English: B1. I successfully passed Cambridge FCE Exam.</li>
+                        <li>Chinese: B1</li>
+                        <li>Belarusian: C1</li>
+                        <li>Russian: native language</li>
+                    </ul>
+                </section>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
