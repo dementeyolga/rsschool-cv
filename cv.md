@@ -7,7 +7,7 @@ Now I am targeted at becoming a professional web-developer, because I find it ex
 6. **Experience**: I've passed several HTML and CSS courses on Codecademy and Stepic, in the course of which I've done several projects.
 7. **Education**: High school, unfinished higher education (3rd year). Frontend courses on Stepic, Codecademy, Coursera.
 8. **Languages**: 
-*English*: C1 level. I successfully passed Cambridge FCE Exam and have a C1-level sertificate.
-*Chinese*: B2 level.
+*English*: B2 level. I successfully passed Cambridge FCE Exam and have a C1-level sertificate.
+*Chinese*: B1 level.
 *Belarusian*: C1 level.
 *Russian*: native language.
